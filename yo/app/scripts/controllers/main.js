@@ -5,17 +5,10 @@
  * @name yoApp.controller:MainCtrl
  * @description # MainCtrl Controller of the yoApp
  */
-angular.module('webApp').controller('MainCtrl', function($scope, $http) {
+angular.module('webApp').controller('MainCtrl', function($scope) {
 	$scope.awesomeThings = [ 'HTML5 Boilerplate', 'AngularJS', 'Karma' ];
 	$scope.serverSays = 'none';
     // Configura o subtítulo a ser usado na página.
-
-	$http.get('./rest/request/current').success(function(data) {
-		$scope.serverSays = data[0];
-		console.log($scope.serverSays);
-	}).error(function() {
-		$scope.serverSays = 'error !';
-	});
 
     var setTilesAreaSize = function(){
         var groups = $('.tile-group');
