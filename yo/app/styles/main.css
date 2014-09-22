@@ -13,7 +13,8 @@ body {
 
 body {
 	background-color: white;
-    background-color: #1b6eae;
+    background-color: #1b6eae; /* darkCyan */
+    background-color: #333333; /* dark */
 	display: block;
 }
 

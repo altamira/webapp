@@ -8,7 +8,6 @@
 angular.module('webApp').controller('MainCtrl', function($scope) {
 	$scope.awesomeThings = [ 'HTML5 Boilerplate', 'AngularJS', 'Karma' ];
 	$scope.serverSays = 'none';
-    // Configura o subtítulo a ser usado na página.
 
     var setTilesAreaSize = function(){
         var groups = $('.tile-group');
@@ -16,9 +15,9 @@ angular.module('webApp').controller('MainCtrl', function($scope) {
         $.each(groups, function(i, t){
             tileAreaWidth += $(t).outerWidth()+46;
         });
-        /*$('.tile-area').css({
+        $('.tile-area').css({
             width: tileAreaWidth
-        });*/
+        });
         $('.container').css({
             width: tileAreaWidth
         });
